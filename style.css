@@ -6,9 +6,18 @@ body {
 
 .header {
   background-color: #f1f1f1;
-  padding: 20px;
+  font-size: 50px;
   text-align: center;
+  border: 1px solid red;
+  align-items: flex-end;
+
+  padding-left: 5px;
 }
+
+.fa-bars {
+  padding-left: 4%;
+}
+
 /** ===|||||||||||||||||||||||||| \\\\\\\\\\\\\\\ |||||||||||||||||||||||===*/
 
 /** ===|||||||||||||||||||||||||| Styling Navbar |||||||||||||||||||||||===*/
@@ -85,11 +94,30 @@ ul.navbar li a:hover:not(:active) {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: #333;
+    height: 60px;
+    text-align: left;
+    border: 1px solid red;
+    align-items: flex-end;
+    font-size: 24px;
+    padding-top: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: aliceblue;
+    display: inherit;
+  }
+
+  .fa-bars {
+    float: right;
+  }
   ul.navbar li a {
     text-align: center;
     float: none;
+    display: none;
   }
+
   .item1 {
     grid-area: header;
   }
@@ -110,4 +138,9 @@ ul.navbar li a:hover:not(:active) {
   }
 }
 
+@media screen and (min-width: 500px) {
+  .header i {
+    display: none;
+  }
+}
 /** ===|||||||||||||||||||||||||| \\\\\\\\\\\\\\\\\\\\ |||||||||||||||||||||||===*/
